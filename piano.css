@@ -1,0 +1,34 @@
+ .body
+{
+    margin: auto;
+    width: 38%;
+    height: 20%;
+    border: 2px solid black;
+    margin-top: 10%;
+} 
+.head
+{
+    margin:auto;
+    width: 99%;
+    height: 35%;
+    border: 4px solid black;
+    margin-top: -.5%;
+    background-color: gray;
+  
+} 
+ .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve,.thirtn,.fourteen,.fifthteen
+{
+    width: 6%;
+    height: 100%;
+    /* display: none; */
+} 
+
+.hide
+{
+    margin: auto;
+    width: 100%;
+    height: 89%;
+    border: 0px solid black;
+    margin-top: -.5%;
+    display: none;
+}

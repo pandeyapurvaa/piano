@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Piano</title>
+        <link rel="stylesheet" href="piano.css">
+
+    </head>
+ <script>
+    function play1(e)
+    {
+        var c=e.target.id
+        var audio=document.getElementById(`P${c}`)
+     audio.play()
+    }
+
+
+    </script>
+    <body>
+        <div class="body" >
+            <div class="head">
+                <button class="start" id="start"  onclick="myfunction">ON</button>
+                <button class="start" id="close"  onclick="myfunction">OFF</button>
+                
+                
+            </div>
+            <div class="hide" id="hide">
+            
+            <button class="one" id="1" onclick="play1(event)"> <audio id="P1" src="f1.wav"></audio></button>
+            <button class="two" id="2"onclick="play1(event)"><audio id="P2" src="f2.wav"></audio></button>
+            <button class="three" id="3" onclick="play1(event)"><audio id="P3" src="f3.wav"></audio></button>
+            <button class="four" id="4" onclick="play1(event)"><audio id="P4" src="f4.mp3"></audio></button>
+            <button class="five" id="5" onclick="play1(event)" ><audio id="P5" src="f5.wav"></audio></button>
+            <button class="six" id="6" onclick="play1(event)"><audio id="P6" src="f6.wav"></audio></button>
+            <button class="seven" id="7" onclick="play1(event)"><audio id="P7" src="f7.mp3"></audio></button>
+            <button class="eight" id="8" onclick="play1(event)"><audio id="P8" src="f8.wav"></audio></button>
+            <button class="nine" id="9" onclick="play1(event)"><audio id="P9" src="f9.mp3"></audio></button>
+            <button class="ten" id="10" onclick="play1(event)"><audio id="P10" src="f10.wav"></audio></button>
+            <button class="eleven" id="11" onclick="play1(event)"><audio id="P11" src="f11.wav"></audio></button>
+            <button class="twelve" id="12" onclick="play1(event)"><audio id="P12" src="f12.wav"></audio></button>
+            <button class="thirtn" id="13" onclick="play1(event)"><audio id="P13" src="f13.mp3"></audio></button>
+            <button class="fourteen" id="14" onclick="play1(event)"><audio id="P14" src="f14.wav"></audio></button>
+            <button class="fifthteen" id="15" onclick="play1(event)"><audio id="P15" src="f15.mp3"></audio></button>
+            <button class="fourteen" id="14" onclick="play1(event)"><audio id="P14" src="f14.wav"></audio></button>
+            <button class="fifthteen" id="15" onclick="play1(event)"><audio id="P15" src="f15.mp3"></audio></button>
+        </div>
+        </div>
+         
+           <script> 
+             document.getElementById("start").addEventListener("click",function(){
+            document.querySelector(".hide").style.display="flex"; 
+       })
+       document.getElementById("close").addEventListener("click",function(){
+            document.querySelector(".hide").style.display="none"; 
+       })
+       </script> 
+    </body>
+</html>
